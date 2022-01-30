@@ -1,0 +1,12 @@
+.popup-content {
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+}
+@media screen and (min-width: 768px) {
+  .popup-content {
+    width: 300px;
+  }
+}

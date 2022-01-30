@@ -1,0 +1,12 @@
+.DarkThemeIcon {
+  color: #f1f1f1;
+}
+.LightThemeIcon {
+  color: #424242;
+}
+.HighlightThemeIcon {
+  color: #ff0b37;
+}
+.icons {
+  font-size: 20px;
+}
