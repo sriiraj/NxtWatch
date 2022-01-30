@@ -142,8 +142,8 @@ class VideoItemDetail extends Component {
                   onClick={onLike}
                   liked={value.likedVideos.includes(VideoData.id)}
                 >
-                  <LikeIcon id="like" />
-                  <ActionText htmlFor="like">Like</ActionText>
+                  <LikeIcon />
+                  Like
                 </LikeCont>
                 <DislikeCont
                   type="button"
@@ -151,7 +151,7 @@ class VideoItemDetail extends Component {
                   disliked={value.dislikedVideos.includes(VideoData.id)}
                 >
                   <DislikeIcon />
-                  <ActionText>Dislike</ActionText>
+                  Dislike
                 </DislikeCont>
                 <SaveCont
                   type="button"
@@ -159,9 +159,7 @@ class VideoItemDetail extends Component {
                   saved={isSaved(VideoData)}
                 >
                   <SaveIcon />
-                  <ActionText>
-                    {isSaved(VideoData) ? 'Saved' : 'Save'}
-                  </ActionText>
+                  {isSaved(VideoData) ? 'Saved' : 'Save'}
                 </SaveCont>
               </LikeAndSaveContainer>
             </VideoActionInnerContainer>

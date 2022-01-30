@@ -1,7 +1,8 @@
 import {Component} from 'react'
 import './index.css'
 import {AiFillHome} from 'react-icons/ai'
-import {FaFire, FaGamepad} from 'react-icons/fa'
+import {FaFire} from 'react-icons/fa'
+import {SiYoutubegaming} from 'react-icons/si'
 import {MdPlaylistAdd} from 'react-icons/md'
 import {
   SidebarMainContainer,
@@ -91,7 +92,7 @@ class Sidebar extends Component {
                   DarkTheme={value.isDarkTheme}
                 >
                   <SidebarListItemContainer to="/gaming">
-                    <FaGamepad
+                    <SiYoutubegaming
                       className={
                         value.selectedRoute === 'gaming'
                           ? 'icons HighlightThemeIcon'

@@ -16,7 +16,7 @@ class GamingVideoItem extends Component {
       <NxtWatchContext.Consumer>
         {value => (
           <GamingListItem>
-            <GamingItemInnerContainer to={`/video/${ItemDetails.id}`}>
+            <GamingItemInnerContainer to={`/videos/${ItemDetails.id}`}>
               <GamingItemThumbnailImg
                 src={ItemDetails.thumbnailUrl}
                 alt="video thumbnail"

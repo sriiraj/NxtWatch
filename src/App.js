@@ -35,7 +35,7 @@ class App extends Component {
     }
   }
 
-  ToggleTheme = () => {
+  toggleDark = () => {
     this.setState(i => ({isDarkTheme: !i.isDarkTheme}))
   }
 
@@ -115,7 +115,7 @@ class App extends Component {
       <NxtWatchContext.Provider
         value={{
           isDarkTheme,
-          toggleDark: this.ToggleTheme,
+          toggleDark: this.toggleDark,
           selectedRoute,
           changeSelectedRoute: this.changeSelectedRoute,
           likedVideos,

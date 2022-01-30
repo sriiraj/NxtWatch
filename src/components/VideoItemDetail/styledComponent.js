@@ -162,8 +162,12 @@ export const LikeCont = styled.button`
   outline: none;
   background-color: transparent;
   color: ${props => (props.liked ? '#2563eb' : '#64748b')};
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 17px;
   @media screen and (max-width: 767px) {
     margin-right: 18px;
+    font-size: 14px;
   }
 `
 export const DislikeCont = styled.button`
@@ -176,8 +180,12 @@ export const DislikeCont = styled.button`
   outline: none;
   background-color: transparent;
   color: ${props => (props.disliked ? '#2563eb' : '#64748b')};
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 17px;
   @media screen and (max-width: 767px) {
     margin-right: 18px;
+    font-size: 14px;
   }
 `
 
@@ -190,8 +198,12 @@ export const SaveCont = styled.button`
   outline: none;
   background-color: transparent;
   color: ${props => (props.saved ? '#2563eb' : '#64748b')};
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 17px;
   @media screen and (max-width: 767px) {
     margin-right: 18px;
+    font-size: 14px;
   }
 `
 export const LikeIcon = styled(BiLike)`
