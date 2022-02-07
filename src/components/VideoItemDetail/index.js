@@ -64,7 +64,7 @@ class VideoItemDetail extends Component {
     videoUrl: data.video_details.video_url,
     thumbnailUrl: data.video_details.thumbnail_url,
     viewCount: data.video_details.view_count,
-    publishedAt: data.video_details.published_at,
+    published_at: data.video_details.published_at,
     description: data.video_details.description,
     name: data.video_details.channel.name,
     profileImageUrl: data.video_details.channel.profile_image_url,
@@ -128,13 +128,10 @@ class VideoItemDetail extends Component {
             {VideoData.title}
           </VideoTitle>
           <VideoActionContainer>
-            <VideoActionInnerContainer
-              data-testid="videoItemDetails"
-              DarkTheme={value.isDarkTheme}
-            >
+            <VideoActionInnerContainer DarkTheme={value.isDarkTheme}>
               <ViewsAndAt>
                 <Views>{VideoData.viewCount} views</Views>
-                <PublishedAt>{VideoData.publishedAt}</PublishedAt>
+                <PublishedAt>{VideoData.published_at}</PublishedAt>
               </ViewsAndAt>
               <LikeAndSaveContainer>
                 <LikeCont
@@ -222,7 +219,10 @@ class VideoItemDetail extends Component {
               <SideBarContainer DarkTheme={value.isDarkTheme}>
                 <Sidebar />
               </SideBarContainer>
-              <VideoItemDetailInnerContainer DarkTheme={value.isDarkTheme}>
+              <VideoItemDetailInnerContainer
+                data-testid="videoItemDetails"
+                DarkTheme={value.isDarkTheme}
+              >
                 <DisplayVideo>{this.RenderVideoPage(value)}</DisplayVideo>
               </VideoItemDetailInnerContainer>
             </VideoItemDetailOuterContainer>

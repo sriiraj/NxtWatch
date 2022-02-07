@@ -43,21 +43,16 @@ class Header extends Component {
                 </LogoImgContainer>
                 <HeaderRightContainer>
                   <ThemeContainer>
-                    <ThemeButton type="button" data-testid="theme">
+                    <ThemeButton
+                      type="button"
+                      data-testid="theme"
+                      onClick={onToggleTheme}
+                    >
                       {value.isDarkTheme && (
-                        <FiSun
-                          color="#f9f9f9"
-                          size="25"
-                          onClick={onToggleTheme}
-                          className="icons"
-                        />
+                        <FiSun color="#f9f9f9" size="25" className="icons" />
                       )}
                       {!value.isDarkTheme && (
-                        <FaMoon
-                          size="25"
-                          onClick={onToggleTheme}
-                          className="icons"
-                        />
+                        <FaMoon size="25" className="icons" />
                       )}
                     </ThemeButton>
                   </ThemeContainer>

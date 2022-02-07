@@ -46,7 +46,7 @@ class VideoItemList extends Component {
                         {ItemDetails.viewCount} Views
                       </VideoListItemViews>
                       <VideoListItemPublishedAt>
-                        {ItemDetails.publishedAt}
+                        {ItemDetails.published_at}
                       </VideoListItemPublishedAt>
                     </VideoListItemViewsContainer>
                   </VideoListItemSubDescContainer>
